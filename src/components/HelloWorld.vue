@@ -1,85 +1,14 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+      <div class="aa-search">
+        <div class="search-title">
+          Search and Compare
+        </div>
+        <div class="aa-search-wrap">
+          <input type="text">
+          <button>Search</button>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -96,18 +25,43 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .aa-search{
+    padding: 120px 0;
+    background-image: url('../assets/homepage33.png');
+  }
+
+  .aa-search .search-title{
+    
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 700;
+  }
+
+  .aa-search input{
+        border-width: 1px;
+    height: 52px;
+    padding: 0 130px 0 20px;
+        transition: all 0.5s ease-out;
+    background: #f6f6f6;
+    border: 3px solid #ececec;
+    width: 100%;
+    outline: none;
+  }
+  .aa-search .aa-search-wrap{
+    position: relative;
+        max-width: 600px;
+        margin: 30px auto;
+  }
+  .aa-search-wrap button{
+    padding: 0 35px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    font-size: 100%!important;
+    color: #fff!important;
+    background-color: #ff4136;
+    border: 1px solid #ff4136;
+    position: absolute;
+   
+  }
 </style>

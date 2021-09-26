@@ -1,19 +1,21 @@
 
 <template>
   <div id="app">
-    <div>Amin</div>
     <HeaderComponent></HeaderComponent>
-    <img src="./assets/logo.png">
+    <HeaderBottom></HeaderBottom>
+    
     <router-view/>
   </div>
 </template>
 
 <script>
+import HeaderBottom from './components/HeaderBottom.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    HeaderBottom
   }
 }
 </script>
