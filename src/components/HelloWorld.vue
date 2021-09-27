@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div id="aaSearch">
     <div class="aa-search">
       <div class="search-title">Search and Compare</div>
       <div class="aa-search-wrap">
@@ -7,7 +7,6 @@
         <button>Search</button>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -37,11 +36,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .aa-search {
-  padding: 120px 0;
+  padding: 7.5rem 1rem;
   background-image: url("../assets/homepage33.png");
 }
 
 .aa-search .search-title {
+  text-align: center;
   color: #ffffff;
   font-size: 40px;
   font-weight: 700;
@@ -62,6 +62,7 @@ export default {
   max-width: 600px;
   margin: 30px auto;
 }
+
 .aa-search-wrap button {
   padding: 0 35px;
   height: 100%;
