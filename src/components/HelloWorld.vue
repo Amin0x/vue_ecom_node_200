@@ -1,12 +1,22 @@
 <template>
-  <div id="aaSearch">
-    <div class="aa-search">
-      <div class="search-title">Search and Compare</div>
-      <div class="aa-search-wrap">
-        <input type="text">
-        <button>Search</button>
+  <div>
+    <div id="aaSearch">
+      <div class="aa-search">
+        <div class="search-title">Search and Compare</div>
+        <div class="aa-search-wrap">
+          <input type="text">
+          <button>Search</button>
+        </div>
       </div>
     </div>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
+    <prod-card-list-component></prod-card-list-component>
   </div>
 </template>
 
@@ -18,19 +28,22 @@ export default {
   components: {
     
   },
+
   computed: {
     
   },
+
   mounted() {
     
   },
+
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
      
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

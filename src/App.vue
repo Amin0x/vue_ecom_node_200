@@ -3,9 +3,7 @@
   <div id="app">
     <HeaderComponent></HeaderComponent>
     <HeaderBottom></HeaderBottom>
-    
     <router-view/>
-
     <Footer></Footer>
   </div>
 </template>
